@@ -2,7 +2,7 @@
 
 Personal portfolio site for Ezzeldeen El-Sadat, AI Automation Specialist & Systems Architect based in Cairo, Egypt.
 
-**Live site:** https://Ezzeldeen-El-Sadat.github.io
+**Live site:** https://Ezzeldeen-del.github.io
 
 ## About
 
