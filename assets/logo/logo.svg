@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 40" width="52" height="40" fill="none" role="img" aria-label="Ezzeldeen Anwer">
+  <!-- PLACEHOLDER MARK — replace this file with the final logo (see README.md in this folder) -->
+  <rect x="0" y="0" width="30" height="6" fill="#fff"/>
+  <rect x="0" y="17" width="22" height="6" fill="#fff"/>
+  <rect x="0" y="34" width="30" height="6" fill="#fff"/>
+  <rect x="0" y="0" width="6" height="40" fill="#fff"/>
+  <path d="M22 20H37" stroke="#d7ff3d" stroke-width="2"/>
+  <circle cx="44" cy="20" r="5" fill="#d7ff3d"/>
+</svg>
