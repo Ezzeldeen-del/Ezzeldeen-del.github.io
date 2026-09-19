@@ -1,5 +1,7 @@
 # Ezzeldeen Anwer — Portfolio
 
+**Live site:** https://ezzeldeen-del.github.io/portfolio/
+
 Single-page portfolio (static HTML/CSS/JS, no build step). Black canvas, mono labels, grotesque
 headlines, lime accent, and a WebGL "lead router" centerpiece.
 
@@ -12,7 +14,11 @@ assets/logo/        logo placeholder — replace when the final logo is ready (s
 assets/favicon.svg  browser-tab icon
 ```
 
-## Run locally
+## Run locally (for testing only — not a live/shareable link)
+
+This is only for previewing changes on your own computer before pushing them live. The link it
+gives you (`localhost:8000`) only works on the machine that's running it — no one else can open it,
+not even you from your phone.
 
 Any static server works, e.g.
 
@@ -20,7 +26,8 @@ Any static server works, e.g.
 python -m http.server 8000
 ```
 
-then open http://localhost:8000. (Opening `index.html` directly from disk also works in most browsers.)
+then open http://localhost:8000 in your own browser. (Opening `index.html` directly from disk also
+works in most browsers, with no server needed.)
 
 ## Deploy (pick one)
 
