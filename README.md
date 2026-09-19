@@ -1,6 +1,6 @@
 # Ezzeldeen Anwer — Portfolio
 
-**Live site:** https://ezzeldeen-del.github.io/portfolio/
+**Live site:** https://ezzeldeen-del.github.io/
 
 Single-page portfolio (static HTML/CSS/JS, no build step). Black canvas, mono labels, grotesque
 headlines, lime accent, and a WebGL "lead router" centerpiece.
