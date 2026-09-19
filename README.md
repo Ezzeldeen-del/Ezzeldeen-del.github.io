@@ -2,63 +2,70 @@
 
 **Live site:** https://ezzeldeen-del.github.io/
 
-Single-page portfolio (static HTML/CSS/JS, no build step). Black canvas, mono labels, grotesque
-headlines, lime accent, and a WebGL "lead router" centerpiece.
+Source for my portfolio — a single-page site built to make one thing obvious in the first five
+seconds: what I automate, and why it matters to a business losing deals to a slow lead pipeline.
+
+## Structure
 
 ```
-index.html          the page (all copy lives here)
-css/style.css       styles + responsive rules
-js/hero.js          Three.js centerpiece (the network behind the hero)
-js/main.js          loader, menu, scroll indicator, sticky works, text fills, footer
-assets/logo/        logo placeholder — replace when the final logo is ready (see its README)
-assets/favicon.svg  browser-tab icon
+index.html          the page itself — every section, every word
+css/style.css        all visual design: layout, color, type, responsive rules
+js/hero.js           the animated network in the hero section
+js/main.js           menu, scroll behavior, sticky sections, in-view animations
+assets/logo/         logo — swap-in ready, see its own README
+assets/favicon.svg   browser-tab icon
 ```
 
-## Run locally (for testing only — not a live/shareable link)
+No build step, no framework, nothing to install. Open `index.html` and it runs.
 
-This is only for previewing changes on your own computer before pushing them live. The link it
-gives you (`localhost:8000`) only works on the machine that's running it — no one else can open it,
-not even you from your phone.
+## Running it locally
 
-Any static server works, e.g.
+For previewing changes on your own machine only — this does not create a public link, and only
+works on the computer running it.
 
 ```
 python -m http.server 8000
 ```
 
-then open http://localhost:8000 in your own browser. (Opening `index.html` directly from disk also
-works in most browsers, with no server needed.)
+Then open http://localhost:8000. Or just double-click `index.html` — most browsers render it
+directly, no server needed.
 
-## Deploy (pick one)
+## Deployment
 
-- **Vercel** — `vercel` is already installed on this machine. From this folder run `vercel` and follow
-  the prompts (`vercel --prod` for the production URL). Or drag the folder onto https://vercel.com/new.
-- **Netlify** — drag the folder onto https://app.netlify.com/drop.
-- **GitHub Pages** — push this folder to a repo, then Settings → Pages → Deploy from branch (`main`, `/root`).
-- **Cloudflare Pages** — connect the repo or upload the folder.
+Live on **GitHub Pages**, served straight from the `main` branch. To publish a change: commit,
+push, and it rebuilds automatically within about a minute.
 
-No environment variables, no build command, output directory is the folder root.
+Other options, if this ever needs to move:
 
-## After going live
+- **Vercel** — run `vercel` from this folder and follow the prompts, or drag the folder onto vercel.com/new.
+- **Netlify** — drag the folder onto app.netlify.com/drop.
+- **Cloudflare Pages** — connect the repo or upload the folder directly.
 
-1. Add `<link rel="canonical" href="https://YOUR-DOMAIN/">` in `index.html` (`<head>`).
-2. Add an `og:image` (1200×630 PNG) so LinkedIn/WhatsApp previews show an image.
-3. Replace `assets/logo/logo.svg` with the final logo (instructions in `assets/logo/README.md`).
+No environment variables, no build command — the output is just this folder.
+
+## Next steps
+
+1. Set `<link rel="canonical" href="https://ezzeldeen-del.github.io/">` in `index.html`'s `<head>`.
+2. Add an `og:image` (1200×630) so link previews on LinkedIn/WhatsApp show an image instead of nothing.
+3. Swap `assets/logo/logo.svg` for the final logo — instructions are in `assets/logo/README.md`.
 
 ## Editing content
 
-- **Latest** panel (hero, bottom-right): `.latest__list` in `index.html`.
-- **Selected Work**: each `<article class="work">` — the counter and scroll length adapt automatically to
-  the number of articles. Labels: `self-directed`, `client`, `freelance build`.
-- **Mission / Vision**: `.statement__text` lines and `.statement__en` paragraph.
-- **Services**, **About** facts, **Contact** links: plain HTML in their sections.
+- **Latest** panel (bottom-right of the hero): `.latest__list` in `index.html`.
+- **Selected Work**: each project is one `<article class="work">` block — the counter and scroll
+  length adjust automatically to however many exist. Tag each `self-directed`, `client`, or
+  `freelance build`.
+- **Mission / Vision**: `.statement__text` and the `.statement__en` line beneath it.
+- **Services**, **About**, **Contact**: plain HTML in their sections — edit the text directly.
 
-## Backend (later)
+## Contact
 
-Contact currently uses `mailto:` and LinkedIn. When the backend is ready, replace the two `.cta` links
-in the footer with a form and post it to your endpoint — no other part of the page depends on it.
+The contact buttons open Gmail (pre-filled) or WhatsApp directly — no backend required. When a
+real form is ready, swap the two `.cta` links in the footer for one that posts to it; nothing else
+on the page depends on how contact is handled.
 
-## Third-party assets
+## Credits
 
-- Fonts: Archivo + IBM Plex Mono via Google Fonts.
-- Three.js r128 via cdnjs (`js/hero.js`). If the CDN is blocked, the page falls back to a static glow.
+- Typefaces: Archivo and IBM Plex Mono, via Google Fonts.
+- 3D graphics: Three.js (r128), via cdnjs. If that CDN is ever unreachable, the hero falls back to
+  a static glow instead of breaking.
