@@ -7,7 +7,7 @@
   <meta name="description" content="AI automation and lead-routing infrastructure for MENA real estate and growth teams. n8n, Make.com, Supabase/PostgreSQL, LLM classification and CRM integration — from first click to assigned agent in under two minutes.">
   <meta name="theme-color" content="#000000">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <!-- Once the domain is live, add: <link rel="canonical" href="https://YOUR-DOMAIN/"> and an og:image (1200x630 PNG) -->
+  <link rel="canonical" href="https://ezzeldeen-del.github.io/">
 
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website">
@@ -15,7 +15,13 @@
   <meta property="og:description" content="Lead-routing infrastructure that takes a lead from first click to agent assignment in under two minutes.">
   <meta property="og:site_name" content="Ezzeldeen Anwer">
   <meta property="og:locale" content="en_US">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:url" content="https://ezzeldeen-del.github.io/">
+  <meta property="og:image" content="https://ezzeldeen-del.github.io/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Ezzeldeen Anwer, AI Automation Specialist. From first click to assigned agent in under two minutes.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://ezzeldeen-del.github.io/assets/og-image.png">
   <meta name="twitter:title" content="Ezzeldeen Anwer — AI Automation Specialist &amp; Systems Architect">
   <meta name="twitter:description" content="Lead-routing infrastructure that takes a lead from first click to agent assignment in under two minutes.">
 
@@ -69,8 +75,9 @@
       <div class="sidemenu__item" data-target="contact"><a href="#contact">Contact</a></div>
       <div class="sidemenu__social">
         <a href="https://www.linkedin.com/in/ezzeldeen-el-sadat-20314430a/" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
-        <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ezzeldeenanwer@gmail.com" target="_blank" rel="noopener noreferrer">EMAIL</a>
+        <a href="mailto:ezzeldeenanwer@gmail.com">EMAIL</a>
         <a href="https://wa.me/201122512615" target="_blank" rel="noopener noreferrer">WHATSAPP</a>
+        <a href="https://github.com/Ezzeldeen-del" target="_blank" rel="noopener noreferrer">GITHUB</a>
       </div>
     </nav>
   </div>
@@ -103,12 +110,12 @@
         <h2 class="latest__title">Latest</h2>
         <ul class="latest__list">
           <li class="latest__item">
-            <span class="latest__date">2026 07</span>
-            <p>Running a 13-day structured B2B outreach sprint targeting real-estate and marketing agencies across MENA.</p>
+            <span class="latest__date">2026 09</span>
+            <p>Tested how fast 14 real-estate companies in Egypt reply to a new buyer. Median reply: 12 hours.</p>
           </li>
           <li class="latest__item">
-            <span class="latest__date">2026 06</span>
-            <p>Shipped a 5-workflow AI qualification &amp; appointment-booking pipeline — n8n, Supabase, Telegram.</p>
+            <span class="latest__date">2026 09</span>
+            <p>Rebuilt my lead-routing and appointment-qualification systems on self-hosted n8n — 6 and 12 end-to-end test runs passed.</p>
           </li>
           <li class="latest__item">
             <span class="latest__date">2026 03</span>
@@ -125,25 +132,37 @@
       <div class="works__sticky">
         <div class="works__head">
           <span class="section-label">Selected Work</span>
-          <span class="works__counter"><b data-current>01</b> / <span data-total>06</span></span>
+          <span class="works__counter"><b data-current>01</b> / <span data-total>07</span></span>
         </div>
 
         <div class="works__list">
           <article class="work" data-index="0">
+            <a class="work__shot" href="assets/work-appointment-system.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size workflow screenshot"><img src="assets/work-appointment-system.png" width="1460" height="1030" alt="n8n canvas of the appointment qualification system: dual-channel intake, shared backend with AI qualification, decision and Cal.com link, and the booking reminder" loading="lazy" decoding="async"></a>
             <div class="work__meta">
-              <time class="work__date" datetime="2026-07">2026 07</time>
+              <time class="work__date" datetime="2026-09">2026 09</time>
               <span class="work__type">self-directed</span>
-              <span class="work__impression">13-day outreach sprint · in progress</span>
+              <span class="work__impression">12 end-to-end test runs passed</span>
             </div>
-            <h3 class="work__title">AI Business Development System</h3>
-            <p class="work__desc">A Claude-coordinated B2B outreach pipeline for an independent automation practice: prospect research, message drafting grounded in direct-response copy (story leads, problem–solution leads) and follow-up strategy, with Notion, Gmail and Google Calendar wired into one auditable workflow instead of ad-hoc spreadsheets.</p>
-            <ul class="chips"><li>claude</li><li>notion</li><li>gmail-api</li><li>google-calendar</li><li>direct-response</li></ul>
+            <h3 class="work__title">AI Appointment Qualification System</h3>
+            <p class="work__desc">A website form and a Telegram bot ask the same six qualifying questions and write to one shared Supabase backend. An LLM decides qualified or not and explains why; qualified leads get a prefilled Cal.com booking link, and a Telegram reminder fires before the booked slot. If the AI call fails, the lead is kept for manual review instead of being dropped. Tested against a mock backend, not yet running for a client.</p>
+            <ul class="chips"><li>n8n</li><li>supabase</li><li>openai</li><li>telegram-bot-api</li><li>cal.com</li></ul>
           </article>
 
           <article class="work" data-index="1">
             <div class="work__meta">
+              <time class="work__date" datetime="2026-07">2026 07 – 09</time>
+              <span class="work__type">self-directed</span>
+              <span class="work__impression">14-company reply-time test · median 12 h</span>
+            </div>
+            <h3 class="work__title">AI Business Development System</h3>
+            <p class="work__desc">A Claude-coordinated B2B outreach pipeline for an independent automation practice: prospect research, message drafting grounded in direct-response copy (story leads, problem–solution leads) and follow-up strategy, with Notion, Gmail and Google Calendar wired into one auditable workflow instead of ad-hoc spreadsheets. In September it ran a reply-time test on 14 real-estate companies in Egypt that now drives every pitch.</p>
+            <ul class="chips"><li>claude</li><li>notion</li><li>gmail-api</li><li>google-calendar</li><li>direct-response</li></ul>
+          </article>
+
+          <article class="work" data-index="2">
+            <div class="work__meta">
               <time class="work__date" datetime="2026-06">2026 06</time>
-              <span class="work__type">freelance build</span>
+              <span class="work__type">self-directed</span>
               <span class="work__impression">5 workflows, built end-to-end</span>
             </div>
             <h3 class="work__title">AI Qualification &amp; Booking Pipeline</h3>
@@ -151,29 +170,30 @@
             <ul class="chips"><li>n8n</li><li>supabase</li><li>postgresql</li><li>telegram</li><li>llm</li></ul>
           </article>
 
-          <article class="work" data-index="2">
+          <article class="work" data-index="3">
+            <a class="work__shot" href="assets/work-lead-routing.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size workflow screenshot"><img src="assets/work-lead-routing.png" width="1995" height="945" alt="n8n canvas of the lead-routing system: multi-source ingestion, dedup and upsert, AI classification, agent assignment, and Telegram notification with audit trail" loading="lazy" decoding="async"></a>
             <div class="work__meta">
-              <time class="work__date" datetime="2026-05">2026 05 – 06</time>
+              <time class="work__date" datetime="2026-05">2026 05 – 09</time>
               <span class="work__type">self-directed</span>
-              <span class="work__impression">Response time: hours → under 2 min</span>
+              <span class="work__impression">Modelled: hours → under 2 min · 6 test runs passed</span>
             </div>
             <h3 class="work__title">AI Lead Operations System</h3>
-            <p class="work__desc">End-to-end routing for a real-estate agency's inbound Meta Ads flow: multi-source ingestion with deduplication and idempotent upsert, an AI layer scoring intent and urgency, a capacity-aware agent-assignment engine using historic conversion data, and Supabase audit logs that make every pipeline action traceable.</p>
+            <p class="work__desc">End-to-end routing for a real-estate agency's inbound Meta Ads flow: multi-source ingestion with deduplication and idempotent upsert, an AI layer scoring intent and urgency, a capacity-aware agent-assignment engine using historic conversion data, and Supabase audit logs that make every pipeline action traceable. Rebuilt on self-hosted n8n in September 2026: the assigned agent gets a Telegram alert with a one-tap WhatsApp link, and leads escalate to a manager when every agent is full.</p>
             <ul class="chips"><li>n8n</li><li>make.com</li><li>supabase</li><li>ai-classification</li><li>meta-ads</li><li>whatsapp</li></ul>
           </article>
 
-          <article class="work" data-index="3">
+          <article class="work" data-index="4">
             <div class="work__meta">
               <time class="work__date" datetime="2025-12">2025 12 – 2026 03</time>
               <span class="work__type">client</span>
               <span class="work__impression">100% data fidelity · zero manual tracking</span>
             </div>
             <h3 class="work__title">Mad4B Traffic Intelligence Pipeline</h3>
-            <p class="work__desc">Consulting engagement with a digital growth team: WordPress → Make.com/Zapier webhooks capture live traffic metadata, an OpenAI parsing layer classifies and scores visitor intent, and Google Search Console metrics sync into CRM schemas and Google Workspace in real time — fully error-handled, conditional-logic workflows.</p>
-            <ul class="chips"><li>make.com</li><li>zapier</li><li>openai</li><li>wordpress</li><li>search-console</li><li>google-workspace</li></ul>
+            <p class="work__desc">Consulting engagement with a digital growth team. I built the WordPress → Make.com/Zapier webhooks that capture live traffic metadata, the OpenAI API integration that passes that data to the team's own AI agent (the agent's scoring logic was theirs), and the sync that moves Google Search Console metrics into CRM schemas and Google Workspace in real time — error-handled, conditional-logic workflows.</p>
+            <ul class="chips"><li>make.com</li><li>zapier</li><li>openai-api</li><li>wordpress</li><li>search-console</li><li>google-workspace</li></ul>
           </article>
 
-          <article class="work" data-index="4">
+          <article class="work" data-index="5">
             <div class="work__meta">
               <time class="work__date" datetime="2025-07">2025 07 – 08</time>
               <span class="work__type">self-directed</span>
@@ -184,7 +204,7 @@
             <ul class="chips"><li>n8n</li><li>gmail-api</li><li>intent-classification</li></ul>
           </article>
 
-          <article class="work" data-index="5">
+          <article class="work" data-index="6">
             <div class="work__meta">
               <time class="work__date" datetime="2025-06">2025 06 – 07</time>
               <span class="work__type">self-directed</span>
@@ -297,7 +317,7 @@
         <div>
           <span class="section-label">About</span>
           <h2 class="about__name">Ezzeldeen Anwer</h2>
-          <p class="about__lead">AI automation specialist and systems architect based in Cairo, open to remote work. Before building pipelines I spent <strong>two years in sales and marketing</strong> — hired as a sales representative at 3H Group and promoted to team leader within three months, at sixteen. That is why every system I design starts from how sales teams actually operate and where automation actually moves the number.</p>
+          <p class="about__lead">AI automation specialist and systems architect based in Cairo, open to remote work. Before building pipelines I worked in sales: hired as a sales representative at 3H Group and <strong>promoted to team leader within three months</strong>, after two years of studying marketing and sales on my own. That is why every system I design starts from how sales teams actually operate and where automation actually moves the number.</p>
           <p class="about__note">Independent builds are labelled self-directed throughout this site: they were designed, built and tested end-to-end to prove out the architecture, not delivered to a live client. Results quoted for them are modelled, not client-reported.</p>
         </div>
         <dl class="about__facts">
@@ -305,7 +325,7 @@
           <div><dt>Stack</dt><dd>n8n · Make.com · Zapier · Supabase / PostgreSQL · OpenAI · Claude · Google AI Studio · Telegram Bot API · REST APIs &amp; webhooks · Google Workspace · Notion</dd></div>
           <div><dt>Experience</dt><dd>AI Automation &amp; Systems Integration Consultant, Mad4B (Dec 2025 – Mar 2026)<small>Sales Representative → Team Leader, 3H Group (Mar – Jun 2025)</small></dd></div>
           <div><dt>Certifications</dt><dd>Digital Ad Expert — Aleph · ITIDA + GIGs Freelancing Track · Youth Support Initiative, 6 tracks / 10 certificates (Ain Shams University, Mansoura University, Ministry of Higher Education) · English Language Certificate, Helwan El Kuwaity Model Institute</dd></div>
-          <div><dt>Learning now</dt><dd>CS50 Introduction to Computer Science (Harvard / edX) · Programming for AI Automation (Python, JavaScript   & SQL)· practical AI workflows</dd></div>
+          <div><dt>Learning now</dt><dd>CS50 Introduction to Computer Science (Harvard / edX) · Programming for AI Automation (Python, JavaScript &amp; SQL) · practical AI workflows</dd></div>
           <div><dt>Languages</dt><dd>Arabic — native · English — upper-intermediate, technical proficiency</dd></div>
         </dl>
       </div>
@@ -323,8 +343,12 @@
       <div>
         <p>If your agency is scaling but the CRM integration and lead pipeline can't keep up, send me a message. We'll audit the system together and find where the leads are actually being lost.</p>
         <div class="footer__buttons">
-          <a class="cta" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ezzeldeenanwer@gmail.com&amp;su=Pipeline%20audit&amp;body=Hi%20Ezzeldeen%2C%0A%0AI%27d%20like%20to%20audit%20our%20lead%20pipeline.%0A%0AAgency%3A%20%0AMonthly%20leads%3A%20%0ACurrent%20tools%3A%20" target="_blank" rel="noopener noreferrer">
+          <a class="cta" href="mailto:ezzeldeenanwer@gmail.com?subject=Pipeline%20audit&amp;body=Hi%20Ezzeldeen%2C%0A%0AI%27d%20like%20to%20audit%20our%20lead%20pipeline.%0A%0AAgency%3A%20%0AMonthly%20leads%3A%20%0ACurrent%20tools%3A%20">
             <span class="cta__text" data-scramble>Book a pipeline audit</span>
+            <span class="cta__icon"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M3.5 2v2h5.1L2 10.6 3.4 12 10 5.4v5.1h2V2z"/></svg></span>
+          </a>
+          <a class="cta" href="https://wa.me/201122512615?text=Hi%20Ezzeldeen%2C%20I%27d%20like%20to%20talk%20about%20our%20lead%20pipeline." target="_blank" rel="noopener noreferrer">
+            <span class="cta__text" data-scramble>Message on WhatsApp</span>
             <span class="cta__icon"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M3.5 2v2h5.1L2 10.6 3.4 12 10 5.4v5.1h2V2z"/></svg></span>
           </a>
           <a class="cta" href="https://www.linkedin.com/in/ezzeldeen-el-sadat-20314430a/" target="_blank" rel="noopener noreferrer">
@@ -346,8 +370,9 @@
         <div class="footer__column">
           <h3>Connect <svg viewBox="0 0 11 9" aria-hidden="true"><path d="M5.45 9 .61.64h9.66L5.45 9Z" fill="#fff"/></svg></h3>
           <a href="https://www.linkedin.com/in/ezzeldeen-el-sadat-20314430a/" target="_blank" rel="noopener noreferrer" data-scramble>LINKEDIN</a>
-          <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ezzeldeenanwer@gmail.com" target="_blank" rel="noopener noreferrer" data-scramble>ezzeldeenanwer@gmail.com</a>
+          <a href="mailto:ezzeldeenanwer@gmail.com" data-scramble>ezzeldeenanwer@gmail.com</a>
           <a href="https://wa.me/201122512615" target="_blank" rel="noopener noreferrer" data-scramble>WhatsApp · +20 112 251 2615</a>
+          <a href="https://github.com/Ezzeldeen-del" target="_blank" rel="noopener noreferrer" data-scramble>GITHUB</a>
         </div>
       </div>
       <div class="footer__meta">
